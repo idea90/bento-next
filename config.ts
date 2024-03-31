@@ -12,11 +12,11 @@ import { Config } from './src/types/config';
 export const config: Config = {
   // General
   name: 'Idea',
-  openInNewTab: true,
+  openInNewTab: false,
   title: 'Bento',
 
   // Clock
-  twelveHourFormat: false,
+  twelveHourFormat: true,
   flashSeparator: false,
 
   // Font Family
@@ -112,16 +112,6 @@ export const config: Config = {
         url: 'https://mail.google.com/mail/u/0/',
       },
       {
-        name: 'Todoist',
-        icon: 'list-ol',
-        url: 'https://todoist.com',
-      },
-      {
-        name: 'Calendar',
-        icon: 'calendar',
-        url: 'https://calendar.google.com/calendar/r',
-      },
-      {
         name: 'Reddit',
         icon: 'fab-reddit',
         url: 'https://reddit.com',
@@ -134,11 +124,6 @@ export const config: Config = {
     ],
     // Second buttons group
     // You muse use the 'buttons' layout to use this group.
-    [
-      {
-        name: 'Music',
-        icon: 'fab-spotify',
-        url: 'https://open.spotify.com',
       },
       {
         name: 'twitter',
@@ -146,24 +131,13 @@ export const config: Config = {
         url: 'https://twitter.com/',
       },
       {
-        name: 'bot',
+        name: 'discord',
         icon: 'fab-discord',
         url: 'https://discord.com/app',
       },
       {
-        name: 'Amazon',
-        icon: 'fab-amazon',
-        url: 'https://amazon.com/',
       },
       {
-        name: 'Hashnode',
-        icon: 'fab-hashnode',
-        url: 'https://hashnode.com/',
-      },
-      {
-        name: 'Figma',
-        icon: 'fab-figma',
-        url: 'https://figma.com/',
       },
     ],
   ],
