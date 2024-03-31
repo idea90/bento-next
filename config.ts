@@ -134,13 +134,10 @@ export const config: Config = {
         name: 'discord',
         icon: 'fab-discord',
         url: 'https://discord.com/app',
-      },
-      {
-      },
-      {
+          },
+        ],
       },
     ],
-  ],
 
   // Lists
   lists: [
