@@ -1,14 +1,3 @@
-//
-//    Bento-Next
-//    Config file
-//
-//
-//    https://github.com/migueravila/Bento - upstream
-
-import { Config } from './src/types/config';
-
-// Bento-next config
-// Use an editor with Typescript support to get autocomplete and validity checking!
 export const config: Config = {
   // General settings
   name: 'Idea',
@@ -98,31 +87,29 @@ export const config: Config = {
     [
       {
         name: 'ChatGPT',
-        icon: 'chat', // Replace with a relevant FontAwesome icon
+        icon: 'fas fa-comment-dots', // Updated icon
         url: 'https://chat.openai.com/',
       },
       {
         name: 'Facebook',
-        icon: 'fab-facebook-f', // FontAwesome icon for Facebook
+        icon: 'fab fa-facebook-f', // Correct icon for Facebook
         url: 'https://facebook.com/',
       },
       {
         name: 'Mail',
-        icon: 'envelope',
+        icon: 'fas fa-envelope',
         url: 'https://mail.google.com/mail/u/0/',
       },
       {
         name: 'Reddit',
-        icon: 'fab-reddit',
+        icon: 'fab fa-reddit',
         url: 'https://reddit.com',
       },
       {
         name: 'Youtube',
-        icon: 'fab-youtube',
+        icon: 'fab fa-youtube',
         url: 'https://youtube.com/',
       },
     ],
   ],
-
-  // Remove lists section if not needed
 };
