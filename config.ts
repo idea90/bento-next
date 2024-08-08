@@ -1,3 +1,14 @@
+//
+//    Bento-Next
+//    Config file
+//
+//
+//    https://github.com/migueravila/Bento - upstream
+
+import { Config } from './src/types/config';
+
+// Bento-next config
+// Use an editor with Typescript support to get autocomplete and validity checking!
 export const config: Config = {
   // General settings
   name: 'Idea',
@@ -60,9 +71,11 @@ export const config: Config = {
   language: 'en', // More languages: https://openweathermap.org/current#multi
 
   // Location settings
-  trackLocation: true, // Request location from the browser
-  defaultLatitude: '17.974855',
-  defaultLongitude: '102.630867',
+  trackLocation: false, // Disable automatic location tracking
+  manualLocation: {
+    latitude: '', // Users will manually enter latitude
+    longitude: '', // Users will manually enter longitude
+  },
 
   // Automatic theme switching settings
   autoTheme: 'system', // Options: 'system', 'location', 'preset', 'none'
@@ -87,13 +100,18 @@ export const config: Config = {
     [
       {
         name: 'ChatGPT',
-        icon: 'fas fa-comment-dots', // Updated icon
+        icon: 'fas fa-comment-dots',
         url: 'https://chat.openai.com/',
       },
       {
         name: 'Facebook',
-        icon: 'fab fa-facebook-f', // Correct icon for Facebook
+        icon: 'fab fa-facebook-f',
         url: 'https://facebook.com/',
+      },
+      {
+        name: 'GitHub', // Added GitHub button
+        icon: 'fab fa-github',
+        url: 'https://github.com/',
       },
       {
         name: 'Mail',
